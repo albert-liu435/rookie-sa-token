@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.rookie.bigdata</groupId>
+    <artifactId>rookie-sa-token</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+
+        <module>sa-token-demo-quick-login</module>
+ <!--       <module>rookie-springboot-retry</module>
+        <module>rookie-springbootweb</module>
+        <module>rookie-springbootjson</module>
+        <module>rookie-springbootredis</module>
+        <module>rookie-springbootdatabase</module>-->
+
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!--        <spring.boot.version>2.7.18</spring.boot.version>-->
+        <!--        <spring.boot.plugin.version>2.7.8</spring.boot.plugin.version>-->
+        <spring.boot.plugin.version>2.5.14</spring.boot.plugin.version>
+        <spring.boot.version>2.5.14</spring.boot.version>
+        <mysql.version>5.1.47</mysql.version>
+        <hutool.version>5.8.24</hutool.version>
+        <weixin-java-pay.version>4.5.9.B</weixin-java-pay.version>
+        <commons.lang3.version>3.14.0</commons.lang3.version>
+        <sa-token.version>1.39.0</sa-token.version>
+
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+
+</project>
